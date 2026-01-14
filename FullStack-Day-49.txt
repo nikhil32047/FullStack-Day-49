@@ -1,0 +1,42 @@
+Day 49:
+==========
+
+a) Using try and except Block
+===================================
+The try–except block is used to catch and handle runtime exceptions so the program does not crash.
+Code that may cause an error is placed inside try, and error-handling code inside except.
+
+Syntax:
+
+try:
+    risky_code
+except ExceptionType:
+    handling_code
+
+
+Example:
+try:
+    x = int("abc")
+except ValueError:
+    print("Invalid conversion")
+
+Key Points:
+Prevents abnormal termination
+Handles specific exceptions
+Improves program reliability
+
+
+b) Default except Block
+===============================
+A default except block catches all types of exceptions when the exception type is not specified.
+
+Example:
+try:
+    a = 10 / 0
+except:
+    print("Some error occurred")
+
+Key Points:
+Handles unknown exceptions
+Should be used carefully
+Best placed after specific except blocks.
